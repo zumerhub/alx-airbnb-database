@@ -1,4 +1,4 @@
-# Entities and Attributes
+# Entities and Attributes.
 
 ## User
 - **user_id**: Primary Key, UUID, Indexed  
