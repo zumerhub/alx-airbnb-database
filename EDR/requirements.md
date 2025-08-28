@@ -51,3 +51,17 @@
 - **recipient_id**: Foreign Key, references User(user_id)  
 - **message_body**: TEXT, NOT NULL  
 - **sent_at**: TIMESTAMP, DEFAULT CURRENT_TIMESTAMP  
+
+
+---
+
+## Relationships Identified:
+
+-  USER → PROPERTY (1:M) - Host relationship 
+-  USER → BOOKING (1:M) - Guest relationship
+-  PROPERTY → BOOKING (1:M) - Reservation relationship
+-  BOOKING → PAYMENT (1:M) - Payment relationship
+-  USER → REVIEW (1:M) - Reviewer relationship
+-  PROPERTY → REVIEW (1:M) - Property reviewed
+-  USER → MESSAGE (1:M) - Sender relationship
+-  USER → MESSAGE (1:M) - Recipient relationship
